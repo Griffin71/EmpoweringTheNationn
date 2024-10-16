@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="login-signup.css">
+    <link rel="icon" href="logo2.ico" type="image/x-icon">
+</head>
+<body>
+    <img src="logo2.ico" class="logo-img">
+
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form id="signUpForm">
+                <h2>Empowering the nation</h2>
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                <button><a href = "home.html">Sign Up</a></button>
+                <div class="back-button" id="backButton">
+                    <a href="#" onclick="switchToSignIn()">&#8592; Back</a>
+                </div>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="signInForm">
+                <h2>Empowering the nation</h2>
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button><a href = "home.html">Sign In</a></button>
+                <a href="#">Forgot your password?</a>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="logo.jpg" alt="Logo" id="overlay-image" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <center>
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                    </center>
+                    <button class="ghost" id="signUp" onclick="switchToSignUp()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer>
+        <p><a href="notSignedInPrivacy.html">Privacy Policy</a> | <a href="notSignedInTerms.html">Terms of Service</a></p>
+        <p>&copy; KOV 2024. All rights reserved.</p>
+    </footer>
+    <script src="login-signup.js"></script>
+</body>
+</html>

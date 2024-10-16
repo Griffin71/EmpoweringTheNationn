@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+    font-size: 18px;
+    animation: fadeIn 1s ease-in;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Header Styles */
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 60px; /* Logo size */
+    height: auto;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #b8860b; /* Gold/Brown on hover */
+}
+
+/* Main Content Styles */
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Fieldset Styles */
+fieldset {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Course Selection Styles */
+.course-category {
+    margin-bottom: 20px;
+}
+
+.course-category label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0; /* Adjust header padding */
+    }
+
+    main {
+        width: 95%; /* Increase width for smaller screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce margin for navigation */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    button {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Media Queries for Extra Small Devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* Further reduce header padding */
+    }
+
+    main {
+        width: 100%; /* Full width on extra small screens */
+        margin: 5px; /* Reduce margin */
+    }
+
+    h1 {
+        font-size: 20px; /* Further adjust heading size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}

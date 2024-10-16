@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees - Empowering the Nation</title>
+    <link rel="stylesheet" href="fees.css">
+    <link rel="icon" href="logo2.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="logo2.ico" alt="Logo" width="100">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="six_month_courses.html">Six-Month Courses</a></li>
+                <li><a href="six_week_courses.html">Six-Week Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Calculate Total Fees</h1>
+        <img src="banner.png" alt="Discount Banner" style="width: 100%; margin-bottom: 20px;">
+
+        <form id="fee-calculator">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required maxlength="20" pattern="[A-Za-z\s]+" title="Please enter a valid name (letters only, up to 20 characters).">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="\d+" title="Please enter a valid phone number (numeric only).">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Select Course/s</legend>
+
+                <!-- Six-Month Courses section -->
+                <div class="course-category">
+                    <h2>Six-Month Courses</h2>
+                    <div id="six-month-courses">
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="First Aid">
+                            <img src="First Aid.png" alt="First Aid Course" width="80"> 
+                            First Aid (R1500)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="Sewing">
+                            <img src="sewing.png" alt="Sewing Course" width="80"> 
+                            Sewing (R1500)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="Landscaping">
+                            <img src="landscape.png" alt="Landscaping Course" width="80"> 
+                            Landscaping (R1500)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="Life Skills">
+                            <img src="life skills.png" alt="Life Skills Course" width="80"> 
+                            Life Skills (R1500)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Six-Week Courses section -->
+                <div class="course-category">
+                    <h2>Six-Week Courses</h2>
+                    <div id="six-week-courses">
+                        <label>
+                            <input type="checkbox" name="course" value="750" data-course="Child Minding">
+                            <img src="child.png" alt="Child Minding Course" width="80"> 
+                            Child Minding (R750)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="course" value="750" data-course="Cooking">
+                            <img src="cook.png" alt="Cooking Course" width="80"> 
+                            Cooking (R750)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="course" value="750" data-course="Garden Maintenance">
+                            <img src="garden.png" alt="Garden Maintenance Course" width="80"> 
+                            Garden Maintenance (R750)
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="button" onclick="calculateTotal()">Calculate</button>
+        </form>
+        
+        <!-- Summary Display -->
+        <div id="summary"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; KOV 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="calculate_fees.js"></script>
+</body>
+</html>

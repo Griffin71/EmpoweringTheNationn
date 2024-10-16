@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Empowering the Nation</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" href="logo2.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="logo2.ico" alt="Logo" width="100">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="six_month_courses.html">Six-Month Courses</a></li>
+                <li><a href="six_week_courses.html">Six-Week Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1 id="progress-title">Step 1: Personal Information</h1>
+            <p>We are almost done, just a few steps...</p>
+        </section>
+
+        <div class="background-section"></div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="bar-1">
+                <h2>Personal Information</h2>
+                <div id="personal-info-display"></div>
+                <button id="confirm-info-btn">Confirm Personal Information</button>
+            </div>
+
+            <div class="progress-bar" id="bar-2" style="display: none;">
+                <h2>Payment Method</h2>
+                <div id="payment-options">
+                    <label>
+                        <img src="mastercard.png" alt="MasterCard" width="30"> 
+                        <input type="radio" name="payment-method" value="MasterCard"> MasterCard
+                    </label>
+                    <label>
+                        <img src="visa.png" alt="Visa" width="30"> 
+                        <input type="radio" name="payment-method" value="CreditCard"> Credit Card
+                    </label>
+                </div>
+                <small>We do not take cash*</small>
+                <div id="payment-form" style="display: none;"></div>
+                <button id="add-payment-method-btn" style="display: none;">Add Payment Method</button>
+            </div>
+
+            <div class="progress-bar" id="bar-3" style="display: none;">
+                <h2>Final Review</h2>
+                <div id="final-info-display"></div>
+                <button id="pay-now-btn">Pay Now</button>
+            </div>
+
+            <div class="progress-indicator">
+                <div id="indicator-1" class="indicator active">1</div>
+                <div id="indicator-2" class="indicator">2</div>
+                <div id="indicator-3" class="indicator">3</div>
+            </div>
+        </div>
+    </main>
+    <div id="animation-container">
+        <div id="money" class="hidden">💰</div>
+        <div id="hands" class="hidden">👋</div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; KOV 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

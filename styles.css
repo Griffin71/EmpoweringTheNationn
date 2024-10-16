@@ -1,0 +1,375 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eee; /* Light grey text for better readability */
+    background-color: #1f1f1f; /* Dark grey background */
+    animation: fadeIn 1s ease-in; /* 3-second fade-in effect */
+}
+
+header {
+    background-color: #f4f4f4; /* Light grey header */
+    color: #000; /* Black text */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix the header to the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of nav items */
+}
+
+body {
+    padding-top: 70px; /* Avoid content hiding under the header */
+    overflow-y: auto; /* Ensure vertical scrolling if needed */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust size of the logo */
+    height: 50px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.logo-container em {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #f4c542;
+}
+
+/* Center the navigation links */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Make ul inline to center it */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Add space between links */
+}
+
+nav ul li a {
+    color: #ccc; /* Light grey for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4c542;
+}
+
+/* Hero Section */
+#hero {
+    background: url('background.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+#hero img {
+    max-width: 500px; /* Increase image size */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent button */
+    color: #fff; /* White text */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    padding: 15px 30px; /* Button padding */
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2em; /* Button font size */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+#hero button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+    border-color: rgba(255, 255, 255, 0.5); /* Border becomes more visible on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/* Course Section */
+#courses {
+    padding: 20px;
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course {
+    border: 1px solid #555; /* Grey border for courses */
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: #2e2e2e; /* Darker grey background for courses */
+    color: #eee; /* Light grey text */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect on course */
+.course:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.course h3 {
+    color: #ddd; /* Light grey for course titles */
+}
+
+/* Course Images */
+.course img {
+    border-radius: 60%;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Transparent Buttons */
+.course a button {
+    background-color: transparent;
+    color: #fff; /* White text */
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.course a button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent on hover */
+    border-color: #f4c542; /* Highlight border on hover */
+}
+
+/* Discount Section */
+#discount {
+    background: linear-gradient(135deg, #4e4e4e, #2e2e2e); /* Gradient background */
+    color: #fff; /* White text */
+    padding: 40px;
+    margin: 20px auto; /* Centering the section */
+    max-width: 800px; /* Max width for the section */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#discount:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Heading Styles */
+#discount h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    position: relative; /* Positioning for the decorative effect */
+}
+
+#discount h2::after {
+    content: '';
+    display: block;
+    width: 50px; /* Decorative line width */
+    height: 5px; /* Decorative line height */
+    background: #f4c542; /* Color for the decorative line */
+    margin: 10px auto; /* Center the line */
+    border-radius: 5px; /* Rounded edges for the line */
+}
+
+/* List Styles */
+#discount ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Left align list items */
+}
+
+#discount li {
+    margin: 10px 0; /* Spacing between list items */
+    font-size: 1.2em; /* Increase font size for emphasis */
+    position: relative; /* Positioning for the bullet effect */
+}
+
+#discount li::before {
+    content: '✓'; /* Checkmark bullet */
+    color: #f4c542; /* Color for the checkmark */
+    position: absolute; /* Positioning for checkmark */
+    left: -25px; /* Space from the list item */
+    font-size: 1.5em; /* Size of the checkmark */
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin-top: 10px;
+    color: #ddd; /* Light grey for labels */
+}
+
+#contact input, #contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #666; /* Grey border for inputs */
+    border-radius: 5px;
+    background-color: #2e2e2e; /* Dark grey background */
+    color: #ccc; /* Light grey text */
+}
+
+
+
+#contact button {
+    background-color: #444; /* Dark grey button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#Begin button { 
+    background-color: #444; /* Dark grey button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #1c1c1c; /* Darker grey footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #f4c542; /* Gold color for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Chatbot container styles */
+#chatbot-container {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Toggle button styles */
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #666;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0; /* Adjust header padding */
+    }
+
+    main {
+        width: 95%; /* Increase width for smaller screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce margin for navigation */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    button {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Media Queries for Extra Small Devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* Further reduce header padding */
+    }
+
+    main {
+        width: 100%; /* Full width on extra small screens */
+        margin: 5px; /* Reduce margin */
+    }
+
+    h1 {
+        font-size: 20px; /* Further adjust heading size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

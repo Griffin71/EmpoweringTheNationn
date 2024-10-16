@@ -1,0 +1,152 @@
+/* about.css file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #eee;
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in;
+}
+.Logo img{
+    border-radius: 60%;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}    
+
+header {
+    background-color: #2a2a2a; /* Dark grey header */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    text-align: center; /* Centered header content */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Light grey for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+h1, h2 {
+    color: #f4c542;
+}
+
+.team {
+    margin-top: 80px;
+}
+
+.Omphe {
+    display: inline-block;
+    width: 31%;
+    margin: 10px;
+    text-align: center;
+}
+
+.Omphe a {
+    color: hotpink;
+}
+
+.Omphe a:hover {
+    text-decoration: underline;
+}
+
+.Omphe img {
+    border-radius: 60%;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.Kabelo {
+    display: inline-block;
+    width: 31%;
+    margin: 10px;
+    text-align: center;
+}
+
+.Kabelo img {
+    border-radius: 60%;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.Vanessa {
+    display: inline-block;
+    width: 31%;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.Vanessa img {
+    border-radius: 60%;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1c1c1c; /* Darker grey footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #f4c542; /* Gold color for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

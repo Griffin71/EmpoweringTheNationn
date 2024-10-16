@@ -1,0 +1,226 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4c542; /* Light Yellow/Gold Background */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in; /* 3-second fade-in effect */
+}
+
+/* Header */
+header {
+    background-color: #444; /* Dark grey background for the header */
+    color: #fff; /* White text for contrast */
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-container img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 15px;
+    width: 50px;
+}
+
+header .logo-container em {
+    font-size: 1.2em;
+    color: #f4c542; /* Light yellow/gold text */
+}
+
+/* Navigation */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 1.1em; /* Same font size for all nav items */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4c542; /* Light yellow/gold on hover */
+}
+
+/* Ensure 'Invoice' looks consistent with the other links */
+nav ul li a h1 {
+    font-size: 1.1em; /* Make 'Invoice' the same size as the rest */
+    display: inline;
+    font-weight: normal; /* Ensure the font weight matches other links */
+    margin: 0;
+    color: inherit; /* Inherit color from the link */
+}
+
+/* Section - Courses */
+#courses {
+    padding: 100px 20px 50px; /* Adjust padding to account for fixed header */
+    text-align: center;
+    background-color: #fff;
+}
+
+#courses h2 {
+    font-size: 2.5em;
+    color: #444; /* Dark grey for headings */
+    margin-bottom: 30px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    background-color: #ececec; /* Light grey for course boxes */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+}
+
+.course h3 {
+    font-size: 1.8em;
+    color: #333; /* Darker grey */
+    margin-bottom: 15px;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.course ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.course ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #444; /* Dark grey footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+    color: #f4c542; /* Light yellow/gold text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 80%;
+    }
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0; /* Adjust header padding */
+    }
+
+    main {
+        width: 95%; /* Increase width for smaller screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce margin for navigation */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    button {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Media Queries for Extra Small Devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* Further reduce header padding */
+    }
+
+    main {
+        width: 100%; /* Full width on extra small screens */
+        margin: 5px; /* Reduce margin */
+    }
+
+    h1 {
+        font-size: 20px; /* Further adjust heading size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

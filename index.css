@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eee; /* Light grey text for better readability */
+    background-color: #1f1f1f; /* Dark grey background */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in;
+}
+
+header {
+    background-color: #2a2a2a; /* Dark grey header */
+    color: #fff; /* White text */
+    padding: 15px 0; /* Increased padding for better spacing */
+    text-align: center; /* Centered header content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+#hero {
+    flex: 1;
+    background: url('logo.jpg') no-repeat center center/cover;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 60px 20px; /* Increased padding for more breathing room */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+#hero img {
+    max-width: 150px; /* Increased max width for a better view */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+#Begin {
+    background-color: #000; /* Black background */
+    border: none; /* Removed border */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+#Begin a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text */
+}
+
+#Begin:hover {
+    background-color: #28a745; /* Green on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    padding: 15px; /* Increased padding for footer */
+    position: relative; /* Position relative for any adjustments */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0; /* Adjusted padding for smaller screens */
+    }
+
+    #hero h1 {
+        font-size: 1.8em; /* Responsive heading size */
+    }
+
+    #Begin {
+        padding: 10px 20px; /* Adjusted button padding */
+        font-size: 16px; /* Adjusted button font size */
+    }
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0; /* Adjust header padding */
+    }
+
+    main {
+        width: 95%; /* Increase width for smaller screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce margin for navigation */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    button {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Media Queries for Extra Small Devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* Further reduce header padding */
+    }
+
+    main {
+        width: 100%; /* Full width on extra small screens */
+        margin: 5px; /* Reduce margin */
+    }
+
+    h1 {
+        font-size: 20px; /* Further adjust heading size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in;
+    color: #000; /* Black text for better readability */
+    background-color: #ffffff; /* White background */
+}
+
+header {
+    background-color: #2a2a2a; /* Dark grey header */
+    color: #fff; /* White text */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Make ul inline to center it */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Add space between links */
+}
+
+nav ul li a {
+    color: #ccc; /* Light grey for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #f4c542; /* Highlight color on hover */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust size of the logo */
+    height: 50px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.logo-container em {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #f4c542; /* Highlight color for logo text */
+}
+
+.background-section {
+    height: 50vh;
+    background: url('the-office.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.progress-container {
+    margin: 20px;
+}
+
+.progress-bar {
+    background: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.indicator {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.indicator.active {
+    background: #007BFF;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition for button */
+}
+
+button:hover {
+    background: #0056b3; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f4f4f4;
+}
+
+#animation-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes drop {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(300px); opacity: 0; }
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Additional features for improved styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for input focus */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #007BFF; /* Highlight border color on focus */
+}
